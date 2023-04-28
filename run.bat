@@ -1,0 +1,2 @@
+gcc main.c -g -pthread -I/opt/homebrew/Cellar/ffmpeg/5.1.2_4/include -o decoding -L/opt/homebrew/Cellar/ffmpeg/5.1.2_4/lib -lavformat -lavcodec -lavutil -lswscale `pkg-config --cflags gtk+-3.0` `pkg-config --libs gtk+-3.0` -framework AudioToolbox -framework CoreAudio -o main
+./main video.mp4 20
